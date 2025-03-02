@@ -1,14 +1,10 @@
-Message Queue
-We have to design a message queue supporting following requirements.
+# A Basic message queue implementation
 
-Ability to Create Topics
+## Scope
 
-Publisher to a topic should be able to push a message to that topic
-
-Subscribers should be able to consume messages from their topic
-
-Whenever a message is published to topic, all its subscribers must see that message
-
-Ability to run Subscribers parallely
-
-Ability to replay messages in a topic from a specified offset
+1. Capability to Create Topics.
+2. A `Publisher` to a topic should be able to push a message to that topic.
+3. A `Subscriber` of a topic should be able to consume messages from that topic.
+4. Every `Subscriber` of a topic, must be able to see all messages published to that topic.
+5. Capability to have multiple concurrent `Subscribers`
+6. Capability to replay messages in a topic from a specified `offset`
